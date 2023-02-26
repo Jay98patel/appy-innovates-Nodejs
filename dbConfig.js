@@ -1,11 +1,12 @@
 const config = {
   user: "sa",
-  password: "Jay@123",
-  server: "ITSJ10\\SQLEXPRESS",
+  password: "123",
+  server: "APPYDEVS",
   database: "StoreDB_501",
-  options: {
-    trustedConnection: true
-  },
+  // options: {
+  //   trustedConnection: true,
+  //   useUTC: true
+  // },
   port:1433
 };
 

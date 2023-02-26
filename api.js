@@ -28,7 +28,7 @@ router.post("/createTableQuery", (req, response) => {
 });
 
 router.post("/createDataQuery", (req, response) => {
-  console.log('api js',req.body.query);
+  console.log('api js', req.body.query);
   dbOperation
     .dataCreation(req.body.query)
     .then((res) => {

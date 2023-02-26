@@ -3,14 +3,15 @@ const sql = require("mssql/msnodesqlv8");
 
 async function getBills(createTableQuery,name) {
   try {
+    console.log('sql server config',config)
     let pool = await sql.connect(config);
     let bills = await pool.request().query(createTableQuery);
     return `Query Executed for table ${name}`
   } catch (error) {
-    return `query not for table ${name}`+'\n'+error
+    return `query X not `+'\n'+error
   }
 }
-
+//"Server=" + SelServerName + ";Database=" + SelDbName + ";User Id=" + ServerUserName + ";Password=" + ServerPassword + ";Encrypt=False;"
 async function dataCreation(createTableQuery) {
   try {
     let pool = await sql.connect(config);
